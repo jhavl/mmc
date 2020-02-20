@@ -1,5 +1,8 @@
 theme: jekyll-theme-cayman
 
+title: [Manipulability Motion Control]
+description: [A short description of your site's purpose]
+
 github:
   repository_url: https://github.com/jhavl/ropy
   zip_url: https://github.com/jhavl/ropy
