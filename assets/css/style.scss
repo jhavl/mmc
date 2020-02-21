@@ -2,3 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+
+.page-header {
+  backgorund-image: linear-gradient(120deg, #fff, #fff);
+}
