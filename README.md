@@ -10,7 +10,7 @@ MMC is designed for serial-link manipulators which have more degrees-of-freedom 
 
 ![Cover](https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg)
 <img src="https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg"/>
-<object type="image/svg+xml" data="https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg">
+<object type="image/svg" data="https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg">
   Your browser does not support SVG
 </object>
 
