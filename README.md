@@ -1,9 +1,9 @@
 
-Jesse Haviland, Peter Corke
+## Jesse Haviland and Peter Corke
 
-Under Review for RA-L/IROS
+_Under Review for RA-L/IROS_
 
-Preprint: 
+_Preprint: _
 
 ### _Manipulability Motion Control (MMC) is a new and improved approach to Resolved-Rate Motion Control (RRMC)._
 
