@@ -5,6 +5,11 @@ $header-heading-color: #fff;
 $header-bg-color: #34a8eb;
 $header-bg-color-secondary: #2796d6;
 
+$section-headings-color: #1f90d1;
+$body-text-color: #535d61;
+$body-link-color: #1e6bb8;
+$blockquote-text-color: #819198;
+
 @import "{{ site.theme }}";
 
 .page-header {
