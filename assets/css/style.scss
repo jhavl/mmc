@@ -5,5 +5,9 @@
   backgorund-image: linear-gradient(120deg, #fff, #fff);
 }
 
+$header-heading-color: #fff;
+$header-bg-color: #000;
+$header-bg-color-secondary: #000;
+
 @import "{{ site.theme }}";
 
