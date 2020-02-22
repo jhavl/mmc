@@ -1,8 +1,8 @@
-### Jesse Haviland and Peter Corke
+### _Jesse Haviland and Peter Corke_
 
-_**Under Review for RA-L and IROS 2020**_
+**Under Review for RA-L and IROS 2020**
 
-**_Preprint:_**
+**Preprint:**
 
 MMC is designed for serial-link manipulators which have more degrees-of-freedom than nessecary to access their entire task space. Examples of these redunant robots include the Franka-Emika Panda, Kuka LBR iiwa, Rethink Robotics Sawyer, and the Kinova Gen3.
 
