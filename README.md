@@ -1,4 +1,4 @@
-##Manipulability Motion Control
+## Manipulability Motion Control
 ### Jesse Haviland and Peter Corke
 
 _Under Review for RA-L/IROS_
