@@ -30,7 +30,7 @@ We have a created a robotics Python library called [ropy](https://github.com/jha
 We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
 
 ### Basic Example
-'''python
+```python
 import ropy as rp
 import numpy as np
 import qpsolvers as qp
@@ -59,5 +59,5 @@ c = -panda.Jm.reshape((7,))
 
 # Solve for the joint velocities dq
 dq = qp.solve_qp(Q, c, None, None, Aeq, beq)
-'''
+```
 
