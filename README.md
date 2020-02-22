@@ -22,3 +22,42 @@ The ellipsoid has three radii, along its principle axes. A small radius about an
 
 ![Manipulability](/images/wide_lite.svg)
 > End-effector angular velocity ellipsoids created using the kinematic Jacobian at two different robot configurations **q**<sub>1</sub> and **q**<sub>2</sub>, on a Panda robot. The ellipsoid depicts how easily the robot's end-effector can move with an arbitrary  angular velocity. The left ellipsoid shows the manipulator's configuration is well conditioned to rotate the end-effector in any direction. While the right configuration is near singular as the end-effector will struggle to rotate around the y or z-axis. This directly corresponds to the manipulability denoted by _m_<sub>1</sub>, and _m_<sub>2</sub>.
+
+## How do I use it?
+
+We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot.
+
+We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
+
+### Basic Example
+'''python
+import ropy as rp
+import numpy as np
+import qpsolvers as qp
+
+# Initialise a Franka-Emika Panda Robot
+panda = rp.Panda()
+
+# The current joint angles of the Panda
+panda.q = np.array([0, -3, 0, -2.3, 0, 2, 0])
+
+# The desired end-effecor spatial velocity
+v = np.array([0.05, 0.05, 0, 0, 0, 0.05])
+
+# Form the equality constraints
+Aeq = panda.J0
+beq = v
+
+# Gain term (lambda) for control minimisation
+Y = 0.005
+
+# Quadratic component of objective function
+Q = Y * np.eye(7)
+
+# Linear component of objective function: the manipulability Jacobian
+c = -panda.Jm.reshape((7,))
+
+# Solve for the joint velocities dq
+dq = qp.solve_qp(Q, c, None, None, Aeq, beq)
+'''
+
