@@ -43,7 +43,8 @@ panda.q = np.array([0, -3, 0, -2.3, 0, 2, 0])
 v = np.array([0.05, 0.05, 0, 0, 0, 0.05])
 
 # Form the equality constraints
-Aeq = panda.J0
+# The kinematic Jacobian in the end-effecor frame
+Aeq = panda.Je
 beq = v
 
 # Gain term (lambda) for control minimisation
@@ -78,7 +79,7 @@ panda.q = np.array([0, -3, 0, -2.3, 0, 2, 0])
 wTe = panda.T
 
 # The desired pose of the robot
-# = Current pose offset 25cm in the x-axis
+# = Current pose offset 20cm in the x-axis
 wTep = np.copy(wTe)
 wTep[0,0] += 0.2
 
@@ -100,6 +101,7 @@ while not arrived:
     v, arrived = rp.p_servo(wTe, wTep)
 
     # Form the equality constraints
+    # The kinematic Jacobian in the end-effecor frame
     Aeq = panda.Je
     beq = v
 
