@@ -1,9 +1,8 @@
-## Manipulability Motion Control
 ### Jesse Haviland and Peter Corke
 
-_Under Review for RA-L/IROS_
+_**Under Review for RA-L and IROS 2020**_
 
-_Preprint:_
+**_Preprint:_**
 
 MMC is designed for serial-link manipulators which have more degrees-of-freedom than nessecary to access their entire task space. Examples of these redunant robots include the Franka-Emika Panda, Kuka LBR iiwa, Rethink Robotics Sawyer, and the Kinova Gen3.
 
@@ -25,7 +24,7 @@ The ellipsoid has three radii, along its principle axes. A small radius about an
 
 ## How do I use it?
 
-We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot. We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
+We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot. See [ropy](https://github.com/jhavl/ropy) for installation instructions. We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
 
 ### Basic Example
 ```python
@@ -114,4 +113,6 @@ while not arrived:
     # Send the joint velocities to the robot
     # eg. ROS messages, PyRep etc.
 ```
+
+
 
