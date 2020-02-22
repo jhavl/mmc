@@ -16,17 +16,17 @@ $blockquote-text-color: #819198;
   background-image: linear-gradient(90deg, $header-bg-color-secondary, $header-bg-color, $header-bg-color-secondary)
 }
 
-img[alt='Cover Image'] {
-    max-width: 60%;
+img {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
+img[alt='Cover Image'] {
+    max-width: 60%;
+}
+
 img[alt='Manipulability'] {
     max-width: 90%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
