@@ -119,6 +119,6 @@ while not arrived:
 
 ### Acknowledgements
 
-This research was supported by the Australian Centre for Robotic Vision (ACRV) and the Queensland Universilty of Technology Centre for Robotics (QCR)
+This research was supported by the Australian Centre for Robotic Vision (ACRV) and the Queensland Universilty of Technology Centre for Robotics (QCR).
 
 ![thanks](/images/acrvqut.png)
