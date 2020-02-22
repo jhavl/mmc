@@ -25,9 +25,7 @@ The ellipsoid has three radii, along its principle axes. A small radius about an
 
 ## How do I use it?
 
-We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot.
-
-We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
+We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot. We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
 
 ### Basic Example
 ```python
@@ -59,5 +57,59 @@ c = -panda.Jm.reshape((7,))
 
 # Solve for the joint velocities dq
 dq = qp.solve_qp(Q, c, None, None, Aeq, beq)
+```
+
+### Position-Based Servoing Example
+```python
+import ropy as rp
+import numpy as np
+import qpsolvers as qp
+
+
+# Initialise a Franka-Emika Panda Robot
+panda = rp.Panda()
+
+# The current joint angles of the Panda
+# You need to obtain these from however you interfave with your robot
+# eg. ROS messages, PyRep etc.
+panda.q = np.array([0, -3, 0, -2.3, 0, 2, 0])
+
+# The current pose of the robot
+wTe = panda.T
+
+# The desired pose of the robot
+# = Current pose offset 25cm in the x-axis
+wTep = np.copy(wTe)
+wTep[0,0] += 0.2
+
+# Gain term (lambda) for control minimisation
+Y = 0.005
+
+# Quadratic component of objective function
+Q = Y * np.eye(7)
+
+arrived = False
+while not arrived:
+
+    # The current joint angles of the Panda
+    # You need to obtain these from however you interfave with your robot
+    # eg. ROS messages, PyRep etc.
+    panda.q = np.array([0, -3, 0, -2.3, 0, 2, 0])
+
+    # The desired end-effecor spatial velocity
+    v, arrived = rp.p_servo(wTe, wTep)
+
+    # Form the equality constraints
+    Aeq = panda.Je
+    beq = v
+
+    # Linear component of objective function: the manipulability Jacobian
+    c = -panda.Jm.reshape((7,))
+
+    # Solve for the joint velocities dq
+    dq = qp.solve_qp(Q, c, None, None, Aeq, beq)
+
+    # Send the joint velocities to the robot
+    # eg. ROS messages, PyRep etc.
 ```
 
