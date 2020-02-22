@@ -16,7 +16,7 @@ $blockquote-text-color: #819198;
   background-image: linear-gradient(90deg, $header-bg-color-secondary, $header-bg-color, $header-bg-color-secondary)
 }
 
-.main-content img {
+img:first-of-type {
     max-width: 60%;
     display: block;
     margin-left: auto;
