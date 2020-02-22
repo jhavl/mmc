@@ -1,10 +1,9 @@
-## Jesse Haviland and Peter Corke
+##Manipulability Motion Control
+### Jesse Haviland and Peter Corke
 
 _Under Review for RA-L/IROS_
 
 _Preprint: _
-
-### _Manipulability Motion Control (MMC) is a new and improved approach to Resolved-Rate Motion Control (RRMC)._
 
 MMC is designed for serial-link manipulators which have more degrees-of-freedom than nessecary to access their entire task space. Examples of these redunant robots include the Franka-Emika Panda, Kuka LBR iiwa, Rethink Robotics Sawyer, and the Kinova Gen3.
 
