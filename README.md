@@ -10,9 +10,13 @@ MMC is designed for serial-link manipulators which have more degrees-of-freedom 
 
 ![Cover](https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg)
 <img src="https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg"/>
-<object type="image/svg" data="https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg">
-  Your browser does not support SVG
-</object>
+<script>
+  var img = new Image();
+  img.onload = function() {
+      ctx.drawImage(img, 0, 0);
+  }
+  img.src = "https://github.com/jhavl/mmc/blob/master/images/cover_lite.svg";
+ </script>
 
 ## Abstract
 Resolved-rate motion control of redundant serial-link manipulators is commonly achieved using the Moore-Penrose pseudoinverse in which the norm of the control input is minimized. However, as kinematic singularities are a significant issue for robotic manipulators, we propose a Manipulability Motion Controller which chooses joint velocities which will also increase the manipulability of the robot. The manipulability measure has a complex non-linear relationship with the robot's joint configuration and in this paper we derive the manipulability Jacobian which directly relates joint velocities to the rate of change of  manipulability. Furthermore, we use the manipulability Jacobian within a constrained quadratic program to create an improved resolved-rate motion controller for redundant robots. The resulting real-time controller provides joint velocities which achieve a desired Cartesian end-effector velocity while also maximising the robot's manipulability.
