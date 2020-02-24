@@ -14,6 +14,8 @@ Resolved-rate motion control of redundant serial-link manipulators is commonly a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zBGLPoPNZ10" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+<br>
+
 * * *
 
 ## What is Manipulability?
