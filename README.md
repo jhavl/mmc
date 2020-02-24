@@ -105,7 +105,7 @@ while not arrived:
     # Form the equality constraints
     # The kinematic Jacobian in the end-effecor frame
     Aeq = panda.Je
-    beq = v
+    beq = v.reshape((6,))
 
     # Linear component of objective function: the manipulability Jacobian
     c = -panda.Jm.reshape((7,))
