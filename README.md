@@ -2,7 +2,7 @@
 
 **Under Review for RA-L and IROS 2020**
 
-**Preprint: https://arxiv.org/abs/2002.11901**
+**[Preprint Avaliable Here](https://arxiv.org/abs/2002.11901)**
 
 MMC is designed for serial-link manipulators which have more degrees-of-freedom than nessecary to access their entire task space. Examples of these redunant robots include the Franka-Emika Panda, Kuka LBR iiwa, Rethink Robotics Sawyer, and the Kinova Gen3.
 
