@@ -1,5 +1,5 @@
 ---
-#
+layout: default
 ---
 
 ### _Jesse Haviland and Peter Corke_
