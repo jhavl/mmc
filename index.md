@@ -1,5 +1,6 @@
 ---
-title: hello
+title: Manipulability Motion Control
+description: Maximising Manipulability During Resolved-Rate Motion Control
 ---
 
 ### _Jesse Haviland and Peter Corke_
