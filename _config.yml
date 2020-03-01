@@ -1,9 +1,6 @@
 title: Manipulability Motion Control
 description: Maximising Manipulability During Resolved-Rate Motion Control
 
-site:
-  title: Manipulability Motion Control
-
 github:
   repository_url: https://github.com/jhavl/ropy
 
