@@ -38,7 +38,7 @@ The ellipsoid has three radii, along its principle axes. A small radius about an
 
 ## How do I use it?
 
-We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot. See [ropy](https://github.com/jhavl/ropy) for installation instructions. We us the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
+We have a created a robotics Python library called [ropy](https://github.com/jhavl/ropy) which allows our algorithm to be used an any robot. See [ropy](https://github.com/jhavl/ropy) for installation instructions. We use the library [qpsolvers](https://pypi.org/project/qpsolvers/) to solve the optimisation function. However, you can use whichever solver you wish.
 
 ### Basic Example
 ```python
