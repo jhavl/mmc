@@ -94,7 +94,7 @@ wTe = panda.T
 # The desired pose of the robot
 # = Current pose offset 20cm in the x-axis
 wTep = np.copy(wTe)
-wTep[0,0] += 0.2
+wTep[0,3] += 0.2
 
 # Gain term (lambda) for control minimisation
 Y = 0.005
