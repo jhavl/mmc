@@ -1,11 +1,11 @@
 ---
 title: Manipulability Motion Control
-description: Maximising Manipulability During Resolved-Rate Motion Control
+description: A Purely-Reactive Manipulability-Maximising Motion Controller
 ---
 
 ### _Jesse Haviland and Peter Corke_
 
-**Under Review for RA-L and IROS 2020**
+**Under Review**
 
 **[Preprint Avaliable Here](https://arxiv.org/abs/2002.11901)**
 
