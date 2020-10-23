@@ -42,16 +42,16 @@ We have a created a robotics Python library called [Robotics Toolbox for Python]
 
 Install [Robotics Toolbox for Python](https://github.com/petercorke/robotics-toolbox-python) from github
 
-```shell script
+```shell
 git clone https://github.com/petercorke/robotics-toolbox-python.git
 cd robotics-toolbox-python
 pip3 install -e .[swift]
-
 ```
 
 The following example uses our Swift simulator, see installation instructions at [Swift](https://github.com/jhavl/swift).
 
 ### Position-Based Servoing Example
+
 ```python
 import roboticstoolbox as rtb
 import spatialmath as sm
