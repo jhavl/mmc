@@ -46,6 +46,7 @@ Install [Robotics Toolbox for Python](https://github.com/petercorke/robotics-too
 git clone https://github.com/petercorke/robotics-toolbox-python.git
 cd robotics-toolbox-python
 pip3 install -e .[swift]
+
 ```
 
 The following example uses our Swift simulator, see installation instructions at [Swift](https://github.com/jhavl/swift).
