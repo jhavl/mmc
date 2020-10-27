@@ -57,7 +57,6 @@ import roboticstoolbox as rtb
 import spatialmath as sm
 import numpy as np
 import qpsolvers as qp
-import time
 
 # Launch the simulator Swift
 env = rtb.backend.Swift()
@@ -71,7 +70,6 @@ panda.q = panda.qr
 
 # Add the Panda to the simulator
 env.add(panda)
-time.sleep(1)
 
 # Number of joint in the panda which we are controlling
 n = 7
