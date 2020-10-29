@@ -58,10 +58,16 @@ Install [Robotics Toolbox for Python](https://github.com/petercorke/robotics-too
 ```shell
 git clone https://github.com/petercorke/robotics-toolbox-python.git
 cd robotics-toolbox-python
-pip3 install -e .[swift]
+pip3 install -e .
 ```
 
-The following example uses our Swift simulator, see installation instructions at [Swift](https://github.com/jhavl/swift).
+The following example uses our Swift simulator. Install [Swift](https://github.com/jhavl/swift) from github
+
+```shell
+git clone https://github.com/jhavl/swift.git
+cd swift
+pip3 install -e .
+```
 
 ### Position-Based Servoing Example
 
