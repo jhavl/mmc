@@ -156,8 +156,27 @@ while not arrived:
 
 ```
 
+### Citation
+
+If you use this work, please cite:
+
+```
+@article{haviland2020mmc,
+  title={A purely-reactive manipulability-maximising motion controller},
+  author={Haviland, J and Corke, P},
+  journal={arXiv preprint arXiv:2002.11901},
+  year={2020}
+}
+```
+
 ### Acknowledgements
 
 This research was supported by the Australian Centre for Robotic Vision (ACRV) and the Queensland Universilty of Technology Centre for Robotics (QCR).
 
 ![thanks](/images/acrvqut.png)
+
+### References
+
+[1] J. Park, C. Wangkyun, and Y. Youngil, "Computation of gradientof manipulability for kinematically redundant manipulators includingdual manipulators system," *Transactions on Control, Automation and Systems Engineering*, vol. 1, no. 1, pp. 8–15, 1999.
+
+[2] J. Baur, J. Pfaff, H. Ulbrich, and T. Villgrattner, "Design and develop-ment of a redundant modular multipurpose agricultural manipulator," in *2012 IEEE/ASME International Conference on Advanced Intelligent Mechatronics (AIM)*, 2012, pp. 823–830.
