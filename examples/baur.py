@@ -7,6 +7,14 @@ import roboticstoolbox as rtb
 import spatialmath as sm
 import numpy as np
 
+"""
+This is an implementation of the controller from:
+J. Baur, J. Pfaff, H. Ulbrich, and T. Villgrattner, “Design and development
+of a redundant modular multipurpose agricultural manipulator,” in 2012
+IEEE/ASME International Conference on Advanced Intelligent Mechatronics
+(AIM), 2012, pp. 823–830.
+"""
+
 # Launch the simulator Swift
 env = rtb.backend.Swift()
 env.launch()
