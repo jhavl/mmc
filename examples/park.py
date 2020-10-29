@@ -7,6 +7,14 @@ import roboticstoolbox as rtb
 import spatialmath as sm
 import numpy as np
 
+"""
+This is an implementation of the controller from:
+Park, C. Wangkyun, and Y. Youngil, “Computation of gradientof manipulability
+for kinematically redundant manipulators includingdual manipulators system,”
+Transactions on Control, Automation and Systems Engineering, vol. 1, no. 1,
+pp. 8–15, 1999.
+"""
+
 # Launch the simulator Swift
 env = rtb.backend.Swift()
 env.launch()
