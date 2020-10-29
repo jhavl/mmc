@@ -162,6 +162,8 @@ while not arrived:
 
 ```
 
+* * *
+
 ### Citation
 
 If you use this work, please cite:
