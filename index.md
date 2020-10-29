@@ -9,7 +9,7 @@ description: A Purely-Reactive Manipulability-Maximising Motion Controller
 
 **[Preprint Avaliable Here](https://arxiv.org/abs/2002.11901)**
 
-MMC can be used on any serial-link manipulator regardless of if it is redundant or not. This includes 7 degree-of-freedom robots such as the Fanka-Emika Panda and the 6 degree-of-freedom robots such as the Universal Robotics 5 manipulator. In short, our reactive controller maximises the manipulability of a robot while guiding the end-effector to a desired pose, and avoiding joint limits.
+MMC can be used on any serial-link manipulator regardless of whether it is redundant. For example, MMC will work with 7 degree-of-freedom robots such as the Fanka-Emika Panda and the 6 degree-of-freedom robots such as the Universal Robotics 5 manipulator. In short, our reactive controller maximises the manipulability of a robot while guiding the end-effector to a desired pose, and avoiding joint limits.
 
 ![Cover Image](/images/cover2_lite.svg)
 
