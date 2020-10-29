@@ -32,7 +32,7 @@ As shown in the table below, MMC provides major improvements to both manipulabil
 |       | Mean Final Manipulability | 0.0381          | 0.0381, +0.0%  | 0.0381, +0.0%  | 0.0460, +20.7% |
 |       | Failures                  | 39.7%           | 39.7%          | 39.7%          | 25.6%          |
 
-We provide an implementation for Park's controller here, and Baur's controller here.
+We provide an implementation for [Park's controller here](https://github.com/jhavl/mmc/blob/master/examples/park.py), and [Baur's controller here](https://github.com/jhavl/mmc/blob/master/examples/baur.py).
 
 * * *
 
