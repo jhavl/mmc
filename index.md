@@ -9,11 +9,19 @@ description: A Purely-Reactive Manipulability-Maximising Motion Controller
 
 **[Preprint Avaliable Here](https://arxiv.org/abs/2002.11901)**
 
-MMC can be used on any serial-link manipulator regardless of if it is redundant or not. This includes 7 degree-of-freedom robots such as the Fanka-Emika Panda and the 6 degree-of-freedom robots such as the Universal Robotics 5 manipulator.
+MMC can be used on any serial-link manipulator regardless of if it is redundant or not. This includes 7 degree-of-freedom robots such as the Fanka-Emika Panda and the 6 degree-of-freedom robots such as the Universal Robotics 5 manipulator. In short, our reactive controller maximises the manipulability of a robot while guiding the end-effector to a desired pose, and avoiding joint limits.
 
 ![Cover Image](/images/cover2_lite.svg)
 
 Resolved-rate motion control of redundant serial-link manipulators is commonly achieved using the Moore-Penrose pseudoinverse in which the norm of the control input is minimized. However, as kinematic singularities are a significant issue for robotic manipulators, we propose a Manipulability Motion Controller which chooses joint velocities which will also increase the manipulability of the robot. The manipulability measure has a complex non-linear relationship with the robot's joint configuration and in this paper we derive the manipulability Jacobian which directly relates joint velocities to the rate of change of  manipulability. Furthermore, we use the manipulability Jacobian within a constrained quadratic program to create an improved resolved-rate motion controller for redundant robots. The resulting real-time controller provides joint velocities which achieve a desired Cartesian end-effector velocity while also maximising the robot's manipulability.
+
+Our controller provides major improvements to both manipulability and failures when compared to resolved-rate motion control (RRMC, the standard reactive motion controller which does not optimise for manipualbility), Park [1] (does optimise for manipulaiblity) and Baur [2] (optimises for manipulability and tries to avoid joint position limits).
+
+| Robot | Measure                   | RRMC (Baseline) | Park [1]       | Baur [2]       | MMC (ours)     |
+|-------|---------------------------|-----------------|----------------|----------------|----------------|
+| Panda | Mean Manipulability       | 0.0693          | 0.0799, +15%   | 0.0785, +13.2% | 0.0942, +35.9% |
+|^^     | Mean Final Manipulability | 0.0692          | 0.0822, +18.4% | 0.0801, +15.7% | 0.0955, +38.0% |
+|^^     | Failures                  | 12.4%           | 18.5%          | 12.7%          | 8.0%           |
 
 <br>
 
