@@ -15,13 +15,18 @@ MMC can be used on any serial-link manipulator regardless of if it is redundant 
 
 Resolved-rate motion control of redundant serial-link manipulators is commonly achieved using the Moore-Penrose pseudoinverse in which the norm of the control input is minimized. However, as kinematic singularities are a significant issue for robotic manipulators, we propose a Manipulability Motion Controller which chooses joint velocities which will also increase the manipulability of the robot. The manipulability measure has a complex non-linear relationship with the robot's joint configuration and in this paper we derive the manipulability Jacobian which directly relates joint velocities to the rate of change of  manipulability. Furthermore, we use the manipulability Jacobian within a constrained quadratic program to create an improved resolved-rate motion controller for redundant robots. The resulting real-time controller provides joint velocities which achieve a desired Cartesian end-effector velocity while also maximising the robot's manipulability.
 
-Our controller provides major improvements to both manipulability and failures when compared to resolved-rate motion control (RRMC, the standard reactive motion controller which does not optimise for manipualbility), Park [1] (does optimise for manipulaiblity) and Baur [2] (optimises for manipulability and tries to avoid joint position limits).
+As shown in the table below, MMC provides major improvements to both manipulability and failures when compared to resolved-rate motion control (RRMC, the standard reactive motion controller which does not optimise for manipulability), Park [1] (does optimise for manipulability) and Baur [2] (optimises for manipulability and tries to avoid joint position limits). Park and Baur both rely on the robot being redundant (having greater than 6 degrees-of-freedom) to work. Consequently, they provide no improvement on the 6 degree-of-freedom UR-5 manipulator.
 
 | Robot | Measure                   | RRMC (Baseline) | Park [1]       | Baur [2]       | MMC (ours)     |
 |-------|---------------------------|-----------------|----------------|----------------|----------------|
 | Panda | Mean Manipulability       | 0.0693          | 0.0799, +15%   | 0.0785, +13.2% | 0.0942, +35.9% |
-|^^     | Mean Final Manipulability | 0.0692          | 0.0822, +18.4% | 0.0801, +15.7% | 0.0955, +38.0% |
-|^^     | Failures                  | 12.4%           | 18.5%          | 12.7%          | 8.0%           |
+|       | Mean Final Manipulability | 0.0692          | 0.0822, +18.4% | 0.0801, +15.7% | 0.0955, +38.0% |
+|       | Failures                  | 12.4%           | 18.5%          | 12.7%          | 8.0%           |
+| UR-5  | Mean Manipulability       | 0.0433          | 0.0433, +0.0%  | 0.0433, +0.0%  | 0.0563, +30.0% |
+|       | Mean Final Manipulability | 0.0381          | 0.0381, +0.0%  | 0.0381, +0.0%  | 0.0460, +20.7% |
+|       | Failures                  | 39.7%           | 39.7%          | 39.7%          | 25.6%          |
+
+We provide an implementation for Park's controller here, and Baur's controller here.
 
 <br>
 
