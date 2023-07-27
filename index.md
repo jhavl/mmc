@@ -3,7 +3,7 @@ title: Manipulability Motion Control
 description: A Purely-Reactive Manipulability-Maximising Motion Controller
 ---
 
-### _Jesse Haviland and Peter Corke_
+### _[Jesse Haviland](https://jhavl.com/) and [Peter Corke](https://petercorke.com/)_
 
 **Under Review**
 
