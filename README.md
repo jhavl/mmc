@@ -1,5 +1,5 @@
 ## Manipulability Motion Control
 ## [See project website](https://jhavl.github.io/mmc)
-### _Jesse Haviland and Peter Corke_
+### _[Jesse Haviland](https://jhavl.com/) and [Peter Corke](https://petercorke.com/)_
 
 
